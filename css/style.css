@@ -51,3 +51,7 @@ main {
 .lista li:hover {
     background-color: lightgray;
 }
+.lista h3 {
+    border: 1px solid black;
+    padding: 5px 0px;
+}

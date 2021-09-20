@@ -22,7 +22,7 @@ const app = new Vue({
     }
 })
 
-// Descrizione:
+
 // Rifare l'esercizio della to do list come fatto assieme in classe:
 // - stampare in pagina un item per ogni elemento contenuto in un array
 // - ogni item ha una "x" associata: cliccando su di essa, l'item viene rimosso dalla lista

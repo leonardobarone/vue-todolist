@@ -27,12 +27,13 @@
             </header>
             <div class="container">
                 <main>
-                    <ul class="lista">
-                        <li v-for="(cosaDaFare, index) in coseDaFare">
+                    <ul v-if="coseDaFare.length > 0"  class="lista">
+                        <li  v-for="(cosaDaFare, index) in coseDaFare">
                             {{cosaDaFare}}
                             <i @click="fatto(index)" class="fas fa-times"></i>
                         </li>
                     </ul>
+                    <h3 v-else>Hai completato tutte le attività presenti nella lista</h3>
                 </main>
             </div>
         </div>
