@@ -27,6 +27,9 @@ body {
     border-color: lightgray;
     border-radius: 5px;
 }
+.header-bottom button {
+    cursor: pointer;
+}
 /* main */
 .container {
     max-width: 768px;

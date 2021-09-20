@@ -10,7 +10,7 @@ const app = new Vue({
         nuovaCosaDaFare: "",
     },
     methods: {
-        fatto: function(index) {
+        cancella: function(index) {
             this.coseDaFare.splice(index, 1)
         },
         aggiungi: function() {

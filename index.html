@@ -30,7 +30,7 @@
                     <ul v-if="coseDaFare.length > 0"  class="lista">
                         <li  v-for="(cosaDaFare, index) in coseDaFare">
                             {{cosaDaFare}}
-                            <i @click="fatto(index)" class="fas fa-times"></i>
+                            <i @click="cancella(index)" class="fas fa-times"></i>
                         </li>
                     </ul>
                     <h3 v-else>Hai completato tutte le attività presenti nella lista</h3>
