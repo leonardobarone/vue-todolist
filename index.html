@@ -29,7 +29,7 @@
                 <main>
                     <ul v-if="coseDaFare.length > 0"  class="lista">
                         <li  v-for="(cosaDaFare, index) in coseDaFare">
-                            {{cosaDaFare}}
+                            {{cosaDaFare.nome}}
                             <i @click="cancella(index)" class="fas fa-times"></i>
                         </li>
                     </ul>

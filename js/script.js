@@ -2,11 +2,21 @@
 const app = new Vue({
     el: "#root",
     data: {
-        coseDaFare: [
-            "Fare i compiti",
-            "Fare la spesa",
-            "Fare il bucato"
+        coseDaFare: [ 
+            {
+                nome: "Fare i compiti",
+                completato: false,
+            },
+            {
+                nome: "Fare la spesa",
+                completato: false
+            },
+            {
+                nome: "Fare il bucato",
+                completato: false            
+            }
         ],
+        
         nuovaCosaDaFare: "",
     },
     methods: {
@@ -15,7 +25,11 @@ const app = new Vue({
         },
         aggiungi: function() {
             if (this.nuovaCosaDaFare != "") {
-                this.coseDaFare.push(this.nuovaCosaDaFare)
+                this.newObj = {},
+                this.newObj.nome = this.nuovaCosaDaFare,
+                this.newObj.completato = false
+                this.coseDaFare.push(this.newObj)
+
                 this.nuovaCosaDaFare = "";
             }
         }
