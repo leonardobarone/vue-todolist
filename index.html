@@ -21,7 +21,7 @@
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <div class="header-bottom">
-                    <input v-model="nuovaCosaDaFare" type="text" placeholder="Nuovo Todo">
+                    <input v-on:keyup.enter="aggiungi()" v-model="nuovaCosaDaFare" type="text" placeholder="Nuovo Todo">
                     <button @click="aggiungi()">Aggiungi</button>
                 </div>
             </header>

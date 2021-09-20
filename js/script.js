@@ -14,7 +14,10 @@ const app = new Vue({
             this.coseDaFare.splice(index, 1)
         },
         aggiungi: function() {
-            this.coseDaFare.push(this.nuovaCosaDaFare)
+            if (this.nuovaCosaDaFare != "") {
+                this.coseDaFare.push(this.nuovaCosaDaFare)
+                this.nuovaCosaDaFare = "";
+            }
         }
     }
 })
