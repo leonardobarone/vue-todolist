@@ -4,3 +4,41 @@
     padding: 0px;
     margin: 0px;
 }
+/* font */
+body {
+    font-family: 'Lato', sans-serif;
+}
+/* header */
+.header-top img {
+    width: 200px;
+}
+.header-top {
+    text-align: center;
+    padding-top: 20px;
+}
+.header-bottom {
+    text-align: center;
+    padding: 20px 0px;
+}
+.header-bottom input,
+.header-bottom button{
+    padding: 5px 15px;
+    margin: 5px;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+/* main */
+main {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: lightslategray;
+    padding: 20px;
+}
+.lista li {
+    list-style: none;
+    padding: 5px 0px;
+    border-bottom: 1px solid black;
+}
+.lista li:hover {
+    background-color: lightgray;
+}

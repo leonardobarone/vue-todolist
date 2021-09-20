@@ -13,6 +13,24 @@
         <title>Vue To Do List</title>
     </head>
     <body>
+        <div id="root">
+            <header>
+                <div class="header-top">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="header-bottom">
+                    <input type="text" placeholder="Nuovo Todo">
+                    <button>Aggiungi</button>
+                </div>
+            </header>
+            <main>
+                <ul class="lista">
+                    <li v-for="cosaDaFare in coseDaFare">{{cosaDaFare}}</li>
+                </ul>
+            </main>
+        </div>
+        <!-- vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
         <!-- js -->
         <script src="js/script.js"></script>
     </body>
