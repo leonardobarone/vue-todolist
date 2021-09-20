@@ -6,7 +6,16 @@ const app = new Vue({
             "Fare i compiti",
             "Fare la spesa",
             "Fare il bucato"
-        ]
+        ],
+        nuovaCosaDaFare: "",
+    },
+    methods: {
+        fatto: function(index) {
+            this.coseDaFare.splice(index, 1)
+        },
+        aggiungi: function() {
+            this.coseDaFare.push(this.nuovaCosaDaFare)
+        }
     }
 })
 

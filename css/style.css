@@ -28,16 +28,25 @@ body {
     border-radius: 5px;
 }
 /* main */
-main {
+.container {
     max-width: 768px;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+main {
     background-color: lightslategray;
     padding: 20px;
 }
 .lista li {
     list-style: none;
-    padding: 5px 0px;
+    padding: 5px;
     border-bottom: 1px solid black;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.lista li:first-child {
+    padding-top: 0px;
 }
 .lista li:hover {
     background-color: lightgray;
